@@ -7,11 +7,13 @@
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="./assets/src/index.js" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
     <!-- hero section ----->
@@ -23,7 +25,7 @@
             src="./assets/images/265C015E-8020-4F90-B0A9-EC45F3608219-modified-removebg-preview 2.png"
             alt=""
           />
-          <nav>
+          <nav class="opacity-1">
             <button class="btn">Home</button>
             <a href="">About</a>
             <a href="">Team </a>
@@ -37,6 +39,7 @@
         <div class="right-header">
           <button class="btn2">Contact US</button>
         </div>
+        <i class="fa-solid fa-bars"></i>
       </header>
       <div class="content">
         <h1>RIS SERVICES</h1>
@@ -51,6 +54,7 @@
         <div class="button">
           <button class="btn3">Learn More</button>
         </div>
+
         <div class="section">
           <div class="sec1 sec">
             <h3>Services at RIS</h3>
@@ -86,34 +90,42 @@
     <section>
       <div class="cards">
         <h2><span>Our </span><br />Tech Partners</h2>
-        <div class="card1">
-          <img src="./assets/images/image 4 (1).png" alt="" />
-        </div>
-        <div class="card2">
-          <img src="./assets/images/image 5.png" alt="" />
-        </div>
-        <div class="card3">
-          <img src="./assets/images/image 6.png" alt="" />
-        </div>
-        <div class="card4">
-          <img src="./assets/images/image 7.png" alt="" />
+
+        <div class="owl-carousel owl">
+          <div class="item">
+            <div class="card1">
+              <img src="./assets/images/image 4 (1).png" alt="" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card2">
+              <img src="./assets/images/image 5.png" alt="" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card3">
+              <img src="./assets/images/image 6.png" alt="" />
+            </div>
+          </div>
+          <div class="item">
+            <div class="card4">
+              <img src="./assets/images/image 7.png" alt="" />
+            </div>
+          </div>
         </div>
       </div>
     </section>
+
     <section class="middle-sec">
       <div class="image">
         <img src="./assets/images/Rectangle 21.png" alt="" />
       </div>
       <div class="content-section">
-<<<<<<< Updated upstream
-        <span><h3>Why</h3></span><br />
-        <h2>Choose Us</h2>
         <p>
-=======
-        <span><h3 class="heading">Why</h3></span><br />
+          <span><h3>Why</h3></span>
+        </p>
         <h2 class="ser-sec">Choose Us</h2>
         <p class="p-1">
->>>>>>> Stashed changes
           We have a sincere desire to make your business work quickly and
           efficiently. Our team is made up of experts well trained and highly
           experienced in this domain who are friendly, knowledgeable and
@@ -127,15 +139,10 @@
           response time and callout can be logged either Telephonic, WhatsApp or
           Email.
         </p>
-<<<<<<< Updated upstream
         <button class="btn4">Learn More</button>
       </div>
     </section>
-=======
 
-        <button class="btn4">Learn More</button>
-      </div>
-    </section>
     <div class="container">
       <div class="box1">
         <h4>Our Services</h4>
@@ -145,34 +152,79 @@
           software) solutions and services.
         </p>
       </div>
-      <div class="box2">
-        <h4>Service1</h4>
-        <p>
-          Random IT Solutions Pvt. Ltd. Is a totally IT solutions and services
-          provider, RIS offering a diverse range.
-        </p>
-      </div>
-      <div class="box3">
-        <h4>Service2</h4>
-        <p>
-          Random IT Solutions Pvt. Ltd. Is a totally IT solutions and services
-          provider, RIS offering a diverse range.
-        </p>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="box3">
+            <h4>Service1</h4>
+            <p>
+              Random IT Solutions Pvt. Ltd. Is a totally IT solutions and
+              services provider, RIS offering a diverse range.
+            </p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="box3">
+            <h4>Service2</h4>
+            <p>
+              Random IT Solutions Pvt. Ltd. Is a totally IT solutions and
+              services provider, RIS offering a diverse range.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
+
     <div class="our-projects">
       <span><h3 class="heading">Our</h3></span><br />
       <h2 class="ser-sec">Projects</h2>
-      <img src="/assets/images/Component 12.png" alt="" />
-      <img src="/assets/images/Component 12.png" alt="" />
-      <img src="/assets/images/Component 12.png" alt="" />
-      <img src="/assets/images/Component 12.png" alt="" />
+      <div class="projectimg">
+        <img src="/assets/images/Component 12.png" alt="" />
+        <img src="/assets/images/Component 12.png" alt="" />
+        <img src="/assets/images/Component 12.png" alt="" />
+        <img src="/assets/images/Component 12.png" alt="" />
+      </div>
 
       <button class="btn5">View all projects</button>
       <div class="news">
-        <h3>Latest News</h3>
+        <span><h3 class="heading">Our</h3></span><br />
+        <h2 class="ser-sec">Latest News</h2>
       </div>
       <div class="box-sec">
+        <div class="box-sec1">
+          <img src="./assets/images/Component 12.png" alt="" />
+          <div class="sec2-content">
+            <img src="assets/images/Group 17.png " alt="" />
+          </div>
+
+          <h4>It Solutions and services</h4>
+
+          <p>
+            We have a sincere desire to make your business work quickly and
+            efficiently. Our team is made up of experts well experienced in this
+            domain who are friendly, knowledgeable and
+          </p>
+
+          <button class="btn5">Learn More</button>
+        </div>
+
+        <div class="box-sec1">
+          <img src="./assets/images/Component 12.png" alt="" />
+          <div class="sec2-content">
+            <img src="assets/images/Group 17.png " alt="" />
+          </div>
+
+          <h4>It Solutions and services</h4>
+
+          <p>
+            We have a sincere desire to make your business work quickly and
+            efficiently. Our team is made up of experts well experienced in this
+            domain who are friendly, knowledgeable and
+          </p>
+
+          <button class="btn5">Learn More</button>
+        </div>
+
         <div class="box-sec1">
           <img src="./assets/images/Component 12.png" alt="" />
           <div class="sec2-content">
@@ -192,53 +244,170 @@
       </div>
     </div>
 
+    <div class="about-say">
+      <span><h3 class="heading">See What Our</h3></span><br />
+      <h2 class="ser-sec">Clients Say About Us</h2>
+
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <div class="slider-about-say">
+            <!--  -->
+            <div class="container-say">
+              <img src="system" alt="star" />
+              <p>
+                This calendar app has been a lifesaver! I used to forget
+                important events, but now I'm always on top of my schedule.
+              </p>
+              <div class="bottom-cont-say">
+                <div class="left">
+                  <img src="sytem" alt="img" />
+                  <span>Sophie Moore</span>
+                </div>
+                <div class="right">Head of marketing</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="slider-about-say">
+            <!--  -->
+            <div class="container-say">
+              <img src="system" alt="star" />
+              <p>
+                This calendar app has been a lifesaver! I used to forget
+                important events, but now I'm always on top of my schedule.
+              </p>
+              <div class="bottom-cont-say">
+                <div class="left">
+                  <img src="sytem" alt="img" />
+                  <span>Sophie Moore</span>
+                </div>
+                <div class="right">Head of marketing</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="slider-about-say">
+            <!--  -->
+            <div class="container-say">
+              <img src="system" alt="star" />
+              <p>
+                This calendar app has been a lifesaver! I used to forget
+                important events, but now I'm always on top of my schedule.
+              </p>
+              <div class="bottom-cont-say">
+                <div class="left">
+                  <img src="sytem" alt="img" />
+                  <span>Sophie Moore</span>
+                </div>
+                <div class="right">Head of marketing</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer>
-      <div class="footer-sec">
+      <div class="footer-sec flex">
         <div class="footer-img">
           <img
             src="/assets/images/265C015E-8020-4F90-B0A9-EC45F3608219-modified-removebg-preview 2 (1).png"
             alt=""
           />
-          <ul type="none">
-            <li>
-              <i class="fa-solid fa-envelope"></i>raghav@randomitsolutiuons.com
-            </li>
-            <li><i class="fa-solid fa-phone"></i>+91 8448870418, +91 8507541015</li>
-            <li>
-              <i class="fa-solid fa-location-pin"></i>
-                2315/23D, 2nd floor, Near Atul Kataria Chowk, behind Karim's
-                Hotel, Near Sec-14 Gurugram, Haryana 122001
-
-            </li>
-          </ul>
-          
         </div>
-        
+        <span>
+          <i class="fa-solid fa-envelope"></i>raghav@randomitsolutiuons.com
+        </span>
+        <span>
+          <i class="fa-solid fa-phone"></i>+91 8448870418, +91 8507541015
+        </span>
+        <span>
+          <i class="fa-solid fa-location-pin"></i>
+          2315/23D, 2nd floor, Near Atul Kataria Chowk, behind Karim's Hotel,
+          Near Sec-14 Gurugram, Haryana 122001
+        </span>
       </div>
-      <div class="li-2">
-        <ul type="none">
-        <li>Home</li>
-        <li>Introduction</li>
-        <li>Our Client</li>
-        <li>Our Services</li>
-        <li>Team Management</li>
-      </ul>
+      <div class="span-2 flex">
+        <strong>Home</strong>
+        <span>Introduction</span>
+        <span>Our Client</span>
+        <span>Our Services</span>
+        <span>Team Management</span>
       </div>
-      <div class="about-us">
-        <ul type="none">
-          <li>About-us</li>
-          <li>Company</li>
-          <li>Acheivements</li>
-          <li>Our goals</li>
-        </ul>
+      <div class="about-us flex">
+        <strong>About-us</strong>
+        <span>Company</span>
+        <span>Acheivements</span>
+        <span>Our goals</span>
       </div>
-      <div class="icon">
-        Follow us on
-        <img src="./assets/images/Buttons Container.png" alt="">
+      <div class="icon flex">
+        <strong> Follow us on </strong>
+        <img src="./assets/images/Buttons Container.png" alt="" />
       </div>
-      <hr>
     </footer>
-    add this section
->>>>>>> Stashed changes
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+      $(".cards .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 10,
+        // nav: true,
+        // autoplay: true,
+        // autoplayTimeout: 2000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      $(".container .owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        // nav: true,
+        // autoplay: true,
+        // autoplayTimeout: 2000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          1100: {
+            items: 2,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      $(".about-say .owl-carousel").owlCarousel({
+        loop: true,
+        // nav: true,
+        // autoplay: true,
+        margin: 10,
+        // autoplayTimeout: 2000,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          800: {
+            items: 2,
+          },
+          1300: {
+            items: 3,
+          },
+        },
+      });
+    </script>
   </body>
 </html>
