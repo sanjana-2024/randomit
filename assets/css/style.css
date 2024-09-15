@@ -432,13 +432,18 @@ h2 {
 /* footer  */
 footer {
   background-color: #191919;
-  width: 100vw;
-  padding: 40px 50px;
   color: white;
+  padding: 40px 50px;
+}
+footer .footer-top {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  padding: 20px 0;
+  margin-bottom: 10px;
   flex-wrap: wrap;
+  border-bottom: 1px solid white;
 }
 
 footer span {
@@ -452,6 +457,9 @@ footer .flex {
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+footer .footer-bottom {
+  text-align: center;
 }
 /* responsive  */
 
