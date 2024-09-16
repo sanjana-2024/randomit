@@ -134,16 +134,33 @@ section {
   /* position: relative; */
 }
 
-/* 
+.ser-sec{
+  position: relative;
+}
 
-.ser-sec ::after {
+
+.ser-sec::after {
   content: "";
   width: 100vw;
   height: 3px;
   background-color: #dc2316;
   position: absolute;
   bottom: 0;
-} */
+}
+
+.ser-sec2{
+  position: relative;
+}
+
+.ser-sec2::after {
+  content: "";
+  width: 90%;
+  height: 3px;
+  background-color: #dc2316;
+  position: absolute;
+  bottom: 0;
+}
+
 
 .middle-sec {
   background-color: #F9F9F9;
