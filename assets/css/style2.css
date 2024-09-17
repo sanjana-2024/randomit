@@ -141,7 +141,35 @@ section {
 
 .ser-sec::after {
   content: "";
-  width: 100vw;
+  width: 65vw;
+  height: 3px;
+  background-color: #dc2316;
+  position: absolute;
+  bottom: 0;
+}
+
+.ser-sec3{
+  position: relative;
+}
+
+
+.ser-sec3::after {
+  content: "";
+  width: 37vw;
+  height: 3px;
+  background-color: #dc2316;
+  position: absolute;
+  bottom: 0;
+}
+
+.ser-sec4{
+  position: relative;
+}
+
+
+.ser-sec4::after {
+  content: "";
+  width: 23vw;
   height: 3px;
   background-color: #dc2316;
   position: absolute;
@@ -150,8 +178,12 @@ section {
 
 .ser-sec2{
   position: relative;
+  padding-left: 30px;
 }
 
+.heading{
+  padding-left: 30px;
+}
 .ser-sec2::after {
   content: "";
   width: 90%;
@@ -278,6 +310,10 @@ section {
 }
 .about-say .owl-carousel {
   width: 95vw;
+}
+
+.owl-carousel .owl-item img{
+  width: 100px;
 }
 
 /* footer  */

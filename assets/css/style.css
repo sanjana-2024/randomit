@@ -2,21 +2,24 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lateef:wght@200;300;400;500;600;700;800&display=swap");
 
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: "Be Vietnam Pro", sans-serif;
   box-sizing: border-box;
 }
+
 body,
 html {
   width: 100%;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   height: 100%;
 }
+
 body::-webkit-scrollbar {
   display: none;
 }
+
 header {
   border-bottom: 2px solid white;
   display: flex;
@@ -57,16 +60,15 @@ nav {
   margin: 0px;
 }
 
-header > i.fa-bars {
+header>i.fa-bars {
   display: none;
   color: white;
 }
+
 .hero-section {
-  background: linear-gradient(
-      to bottom,
+  background: linear-gradient(to bottom,
       rgba(12, 12, 12, 0.7),
-      rgba(5, 4, 4, 0.7)
-    ),
+      rgba(5, 4, 4, 0.7)),
     url(/assets/images/html-css-collage-concept-with-person\ 2.png);
   background-size: cover;
   background-position: center;
@@ -96,12 +98,10 @@ header > i.fa-bars {
 }
 
 .content h1 {
-  background: linear-gradient(
-    180deg,
-    #ffffff 52.51%,
-    rgba(255, 255, 255, 0) 69.45%,
-    rgba(255, 255, 255, 0) 69.45%
-  );
+  background: linear-gradient(180deg,
+      #ffffff 52.51%,
+      rgba(255, 255, 255, 0) 69.45%,
+      rgba(255, 255, 255, 0) 69.45%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   text-align: center;
@@ -160,6 +160,7 @@ header > i.fa-bars {
   color: #ffffff62;
   border-left: solid #ffffff62;
 }
+
 .item {
   display: flex;
 }
@@ -187,11 +188,13 @@ header > i.fa-bars {
 .cards h2 {
   font-size: 2em;
 }
+
 .cards .owl-carousel {
   display: flex;
   width: 60vw;
   align-items: center;
 }
+
 .cards .owl-carousel img {
   /* width: 110px; */
   border: 1px solid rgba(0, 0, 0, 0.37);
@@ -201,6 +204,7 @@ header > i.fa-bars {
   padding: 10px 20px;
   object-fit: cover;
 }
+
 .owl-carousel .owl-nav {
   text-align: center;
   font-size: 40px;
@@ -228,6 +232,7 @@ header > i.fa-bars {
   line-height: 30px;
   position: relative;
 }
+
 .btn4 {
   width: 150px;
   padding: 10px;
@@ -239,6 +244,7 @@ header > i.fa-bars {
 
 h2 {
   position: relative;
+  overflow-x: hidden;
 }
 
 .ser-sec {
@@ -253,6 +259,7 @@ h2 {
   position: absolute;
   bottom: 0;
 }
+
 .p-1 {
   font-size: 18px;
 }
@@ -270,10 +277,11 @@ h2 {
   padding: 40px;
   color: #ffffff;
 
-   background-color: #F9F9F9; 
+  background-color: #F9F9F9;
   font-family: "Be Vietnam Pro", sans-serif;
 }
-.img{
+
+.img {
   width: 10vw;
 }
 
@@ -302,6 +310,7 @@ h2 {
 .container {
   overflow: hidden;
 }
+
 .container .box3 {
   background-image: url(/assets/images/Rectangle\ 15\ \(1\).png);
   background-position: center;
@@ -322,6 +331,7 @@ h2 {
 .container p {
   font-size: 18px;
 }
+
 .container .owl-carousel {
   width: 65vw;
 }
@@ -340,6 +350,7 @@ h2 {
   padding-bottom: 100px;
 
 }
+
 .our-projects .projectimg {
   display: flex;
   /* flex-wrap: wrap; */
@@ -347,6 +358,7 @@ h2 {
   /* justify-content: space-between; */
   /* margin: 40px; */
 }
+
 .our-projects img {
   /* width: 24%; */
   margin-top: 13px;
@@ -399,11 +411,13 @@ h2 {
 }
 
 /* .client-about say  */
+
 .about-say {
   background-color: #191919;
   color: white;
-  margin-bottom: 100px;
+  /* margin-bottom: 100px; */
   padding: 40px;
+  margin: 32px;
 }
 
 .about-say .slider-about-say {
@@ -413,6 +427,7 @@ h2 {
   margin: 20px 0;
   width: 500px;
 }
+
 .about-say .slider-about-say .container-say {
   display: flex;
   flex-direction: column;
@@ -430,9 +445,15 @@ h2 {
   gap: 10px;
   white-space: nowrap;
 }
+
 .about-say .owl-carousel {
   width: 95vw;
 }
+
+.owl-carousel .owl-item img {
+  width: 100px;
+}
+
 
 /* footer  */
 footer {
@@ -440,6 +461,7 @@ footer {
   color: white;
   padding: 40px 50px;
 }
+
 footer .footer-top {
   width: 100%;
   display: flex;
@@ -458,29 +480,38 @@ footer span {
 footer .footer-sec {
   width: 400px;
 }
+
 footer .flex {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 footer .footer-bottom {
   text-align: center;
 }
+
+/* 
+.footer-sec flex i{
+  color: #ffffff;
+} */
 /* responsive  */
 
 @media (max-width: 1100px) {
   .container .box1 {
     width: 50%;
   }
+
   .container .owl-carousel {
     width: 50vw;
   }
 }
 
 @media (max-width: 1000px) {
-  header > i.fa-bars {
+  header>i.fa-bars {
     display: block;
   }
+
   .left-header nav {
     flex-direction: column;
     width: 100%;
@@ -501,6 +532,7 @@ footer .footer-bottom {
     line-height: 30px;
     position: relative;
   }
+
   .btn4 {
     width: 150px;
     padding: 10px;
@@ -513,6 +545,7 @@ footer .footer-bottom {
   .content-section {
     line-height: 1.5;
   }
+
   .p-1 {
     font-size: 14px;
   }
@@ -532,11 +565,13 @@ footer .footer-bottom {
   .section .sec {
     width: 300px;
   }
+
   .cards {
     gap: 10px;
 
     flex-direction: column;
   }
+
   .cards .owl-carousel {
     width: 90vw;
   }
@@ -544,6 +579,7 @@ footer .footer-bottom {
   .middle-sec {
     flex-direction: column;
   }
+
   .middle-sec .image img {
     width: 90vw;
     object-fit: contain;
@@ -553,10 +589,12 @@ footer .footer-bottom {
     flex-direction: column;
     height: auto;
   }
+
   .container .box1 {
     width: 100%;
     padding-bottom: 20px;
   }
+
   .container .owl-carousel {
     width: 90vw;
   }
@@ -566,13 +604,16 @@ footer .footer-bottom {
   .content1 {
     width: 90%;
   }
+
   .hero-section {
     height: auto;
   }
+
   .hero-section .section {
     position: relative;
     padding: 50px 10px;
   }
+
   .hero-section .section .sec {
     width: fit-content;
   }
