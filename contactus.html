@@ -72,39 +72,85 @@
         </div>
       </div>
       <!-- Form Section -->
-      <div class="form">
-        <form action="">
-          <h1>
-            Love to hear from you,<br />
-            Get in touch 👋
-          </h1>
-         
-          <div class="form-section">
-            <div class="form-1">
-            <h6>Your Name</h6>
-            <input placeholder="Edward Snowden">
-            </div>
-            <div class="form-2">
-            <h6>Your email</h6>
-            <input placeholder="itexample.com">
+      <div class="container">
+        <div class="left-content"></div>
+        <form class="form">
+          <h2>Love to hear from you, Get in touch 👋</h2>
+          <div class="name-mail">
+              <div class="name">
+                  <label>Your Name</label>
+                  <input type="text" placeholder="Edward Snowden">
+              </div>
+              <div class="mail">
+                  <label>Your Email</label>
+                  <input type="email" placeholder="itanexample@gmail.com">
+              </div>
           </div>
+  
+          <div class="name-mail">
+              <div class="name">
+                  <label>Phone No.</label>
+                  <input type="number" placeholder="Enter Your Phone No.">
+              </div>
+              <div class="mail">
+                  <label>What Kind of Service You Looking For?</label>
+                  <select style="width: 240px; margin-left: 30px; padding: 8px; font-size: 12px; color: grey;">
+                      <option value="New Computer Setup">New Computer Setup</option>
+                  </select>
+              </div>
           </div>
-          <div class="form-3">
-            <h6>Phone number</h6>
-           <input type="tel" placeholder="+91">
+  
+          <div class="textarea">
+              <label>Message</label>
+              <textarea placeholder="Let tell us know your project about" rows="5"></textarea>
           </div>
-          <div class="form-4">
-            <h6>What kind of service are you looking for?</h6>
-            <select name="" id="">
-        <option value="">New computer setup</option>
-        <optgroup label="Services">
-          <option value="">web dev</option>
-          <option value="">App dev</option>
-        </optgroup>
-            </select>
-          </div>
+  
+          <button class="submit-button">Submit <i class="fa-solid fa-arrow-up-right"></i></button>
+  
         </form>
       </div>
-    </div>
+      <footer class="footer">
+        <div class="footer-top">
+          <div class="footer-sec flex">
+            <div class="footer-img">
+              <img
+                src="/assets/images/265C015E-8020-4F90-B0A9-EC45F3608219-modified-removebg-preview 2 (1).png"
+                alt=""
+              />
+            </div>
+            <span>
+              <i class="fa-solid fa-envelope"></i>raghav@randomitsolutiuons.com
+            </span>
+            <span>
+              <i class="fa-solid fa-phone"></i>+91 8448870418, +91 8507541015
+            </span>
+            <span>
+              <i class="fa-solid fa-location-pin"></i>
+              2315/23D, 2nd floor, Near Atul Kataria Chowk, behind Karim's Hotel,
+              Near Sec-14 Gurugram, Haryana 122001
+            </span>
+          </div>
+          <div class="span-2 flex">
+            <strong>Home</strong>
+            <span>Introduction</span>
+            <span>Our Client</span>
+            <span>Our Services</span>
+            <span>Team Management</span>
+          </div>
+          <div class="about-us flex">
+            <strong>About-us</strong>
+            <span>Company</span>
+            <span>Acheivements</span>
+            <span>Our goals</span>
+          </div>
+          <div class="icon flex">
+            <strong> Follow us on </strong>
+            <img src="./assets/images/Buttons Container.png" alt="" />
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 Global Infotech. All rights reserved.</p>
+        </div>
+      </footer>
   </body>
 </html>
