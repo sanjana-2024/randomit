@@ -12,7 +12,7 @@
 body,
 html {
   width: 100%;
-  /* overflow-x: hidden; */
+  overflow-x: hidden;
   height: 100%;
 }
 
@@ -195,8 +195,12 @@ header>i.fa-bars {
   align-items: center;
 }
 
+.owl-carousel .owl-item img {
+  width: 198px;
+}
+
 .cards .owl-carousel img {
-  /* width: 110px; */
+ 
   border: 1px solid rgba(0, 0, 0, 0.37);
   aspect-ratio: 7/2;
 
@@ -222,7 +226,7 @@ header>i.fa-bars {
 
 .image img {
   padding: 10px;
-  height: 57vh;
+  height: 80vh;
   width: 40vw;
   object-fit: cover;
   object-position: top;
@@ -366,7 +370,7 @@ h2 {
 
 .box-sec {
   display: flex;
-  gap: 10px;
+  gap: 50px;
   padding: 20px;
   flex-wrap: wrap;
 }
@@ -449,12 +453,16 @@ h2 {
 .about-say .owl-carousel {
   width: 95vw;
 }
+/* 
+.left img{
+  height: 15vh;
+  width: 5vw;
+} */
 
-.owl-carousel .owl-item img {
-  width: 100px;
+.left-img img{
+  height: 15vh;
+  width: 5vw;
 }
-
-
 /* footer  */
 footer {
   background-color: #191919;
