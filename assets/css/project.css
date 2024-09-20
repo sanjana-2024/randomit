@@ -130,6 +130,14 @@ section {
 }
 
 
+
+.owl-carousel .owl-nav {
+  text-align: center;
+  font-size: 40px;
+  line-height: 1;
+  color: black;
+}
+
 .ser-sec4::after {
   content: "";
   width: 80vw;

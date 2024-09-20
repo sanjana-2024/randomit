@@ -32,6 +32,7 @@ header {
   padding: 0 20px;
   height: 60px;
   position: relative;
+  background-color: #ffffff;
 }
 .opacity-1 {
   opacity: 1;
@@ -46,7 +47,7 @@ header {
 a {
   text-decoration: none;
   font-size: 14px;
-  color: white;
+  color: #191919;
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
@@ -87,6 +88,26 @@ header > i.fa-bars {
   color: white;
 }
 
+
+.btn {
+  background-color: #281571;
+  font-family: "Be Vietnam Pro", sans-serif;
+  width: 56px;
+  height: 25px;
+  border: none;
+  border-radius: 2px;
+  color: #d5d5d5;
+}
+
+.btn2 {
+  font-family: "Be Vietnam Pro", sans-serif;
+  background-color: #dc2316;
+  border: none;
+  /* width: 86px; */
+  border-radius: 3px;
+  color: #d5d5d5;
+  padding: 10px 20px;
+}
 /* cards  */
 
 /* about-rip-services" */
@@ -343,6 +364,11 @@ h2 {
   white-space: nowrap;
 }
 
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 30%;
+}
 /* footer  */
 footer {
   background-color: #191919;
