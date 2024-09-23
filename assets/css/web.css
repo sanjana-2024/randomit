@@ -20,6 +20,7 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+
 .learn-more {
   padding: 10px 50px 10px 20px;
   border: 1px solid black;
@@ -65,7 +66,7 @@ nav {
 }
 header > i.fa-bars {
   display: none;
-  color: white;
+  color: black;
 }
 .hero-section {
   background: linear-gradient(
@@ -117,29 +118,41 @@ header > i.fa-bars {
   gap: 20px;
 }
 .about-rip-services img {
-  width: 38vw;
+  width: 100%;
 }
 
 h2 {
-  color: red;
+  color: red; 
+  font-size: 2vw;
 }
-.heading {
-  width: 200px;
+.heading h1{
+  position: relative;
+  font-size: 3vw;
+  width:fit-content;
+  &::after {
+  content: "";
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 100vw;
 }
 
+}
+.heading {
+  position: relative; 
+}
+
+
+ .right-section{ 
+   width: 50%;
+   position: relative;
+} 
 .inclusions-in-the-services .right-section .about,
 .about-rip-services .right-section .about {
   position: relative;
-  &::after {
-    content: "";
-    height: 3px;
-    background-color: red;
-    position: absolute;
-    top: 65px;
-    top: 0;
-    right: 0;
-    width: calc(100% - 200px);
-  }
+ 
 }
 
 .about-rip-services .right-section p {
@@ -452,6 +465,10 @@ footer .footer-bottom {
     overflow: hidden;
     text-align: center;
   }
+  
+ .right-section{
+  width: 100%;
+ }
 }
 
 @media (max-width: 730px) {
@@ -464,6 +481,7 @@ footer .footer-bottom {
     justify-content: space-around;
     bottom: 5px;
   }
+
 }
 
 @media (max-width: 633px) {

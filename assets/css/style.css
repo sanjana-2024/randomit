@@ -195,9 +195,7 @@ header>i.fa-bars {
   align-items: center;
 }
 
-
 .cards .owl-carousel img {
- 
   border: 1px solid rgba(0, 0, 0, 0.37);
   aspect-ratio: 7/2;
 
@@ -244,6 +242,7 @@ header>i.fa-bars {
 }
 
 h2 {
+  padding-left: 13px;
   position: relative;
   overflow-x: hidden;
 }
@@ -266,6 +265,7 @@ h2 {
 }
 
 .heading {
+  padding-left: 12px;
   font-size: 30px;
 }
 
@@ -278,14 +278,13 @@ h2 {
   padding: 40px;
   color: #ffffff;
 
-  background-color: #F9F9F9;
+  background-color: #f9f9f9;
   font-family: "Be Vietnam Pro", sans-serif;
 }
 
 .img {
   width: 10vw;
 }
-
 
 .container .box1 {
   background-image: url(/assets/images/360_F_856390912_VdwGcBqf3OwuoHPeNBDd57krQVRmTw2t.jpg);
@@ -349,16 +348,13 @@ h2 {
   flex-direction: column;
   padding: 40px;
   padding-bottom: 100px;
-
 }
-
-
 
 .our-projects .projectimg {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   gap: 3px;
-  /* justify-content: space-between; */
+  justify-content: center;
   /* margin: 40px; */
 }
 
@@ -372,6 +368,7 @@ h2 {
   gap: 50px;
   padding: 20px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .box-sec .box-sec1 {
@@ -420,7 +417,7 @@ h2 {
   color: white;
   /* margin-bottom: 100px; */
   padding: 40px;
-  margin: 32px;
+  margin: 10px 0 10px 0;
 }
 
 .about-say .slider-about-say {
@@ -458,21 +455,23 @@ h2 {
 .about-say .owl-carousel {
   width: 95vw;
 }
+
 /* 
 .left img{
   height: 15vh;
   width: 5vw;
 } */
 
-.left-img img{
+.left-img img {
   height: 15vh;
   width: 5vw;
 }
 
-.container-say img {
+.owl-carousel .owl-item .container-say img {
   height: 34px;
-  width: 99px;
-} 
+  width: 59px;
+}
+
 /* 
 .bottom-cont-say img{
   height: 100px;
@@ -518,6 +517,8 @@ footer .footer-bottom {
 .footer-sec flex i{
   color: #ffffff;
 } */
+
+
 /* responsive  */
 
 @media (max-width: 1100px) {
@@ -605,8 +606,10 @@ footer .footer-bottom {
 
   .middle-sec .image img {
     width: 90vw;
-    object-fit: contain;
+    /* object-fit: contain; */
   }
+
+
 
   .container {
     flex-direction: column;
@@ -644,4 +647,17 @@ footer .footer-bottom {
   .our-projects {
     padding: 0;
   }
+}
+
+
+@media (max-width: 700px) {
+  .projectimg {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .about-say .slider-about-say {
+    width: 80vw;
+  }
+
 }
