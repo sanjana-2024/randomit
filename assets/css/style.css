@@ -551,13 +551,7 @@ footer .footer-bottom {
     opacity: 0;
   }
 
-  .opacity-1 {
-    background-color: transparent;
-    color: white;
-    border: none;
-  }
- 
-  
+  /*  */
   .content-section {
     line-height: 30px;
     position: relative;
