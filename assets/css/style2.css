@@ -56,7 +56,7 @@ nav {
 
 header>i.fa-bars {
   display: none;
-  color: white;
+  color: black;
 }
 
 /* .hero-section {
@@ -132,65 +132,10 @@ section {
   /* position: relative; */
 }
 
-.ser-sec{
-  position: relative;
-}
 
-
-.ser-sec::after {
-  content: "";
-  width: 100%;
-  height: 3px;
-  background-color: #dc2316;
-  position: absolute;
-  bottom: 0;
-}
-
-.ser-sec3{
-  position: relative;
-}
-
-
-.ser-sec3::after {
-  content: "";
-  width: 100%;
-  height: 3px;
-  background-color: #dc2316;
-  position: absolute;
-  bottom: 0;
-}
-
-.ser-sec4{
-  position: relative;
-}
-
-
-.ser-sec4::after {
-  content: "";
-  width: 23vw;
-  height: 3px;
-  background-color: #dc2316;
-  position: absolute;
-  bottom: 0;
-}
-
-.ser-sec2{
-  position: relative;
+.heading-1{
   padding-left: 30px;
 }
-
-.heading{
-  padding-left: 30px;
-}
-.ser-sec2::after {
-  content: "";
-  width: 90%;
-  height: 3px;
-  background-color: #dc2316;
-  position: absolute;
-  bottom: 0;
-}
-
 
 .middle-sec {
   background-color: #F9F9F9;
@@ -208,33 +153,63 @@ section {
 .image2 img {
 
   height: 70vh;
-  width: 40vw;
+  width: 100%;
   object-fit: cover;
 
 }
 
+
+.heading-2{
+  position: relative;
+}
+
+.heading-2::after{
+content: "";
+position: absolute;
+background-color: red;
+width: 100%;
+height: 2px;
+bottom: 2px;
+}
+
+.heading-2 h2{
+  position: relative;
+  background-color:#191919;
+  z-index: 1;
+  width: fit-content;
+}
+
+
+.heading{
+  position: relative;
+}
+
+.heading::after{
+content: "";
+position: absolute;
+background-color: red;
+width: 100%;
+height: 2px;
+bottom: 2px;
+}
+
+.heading h2{
+  position: relative;
+  background-color: #ffffff;
+  z-index: 1;
+  width: fit-content;
+}
+
 .content-sec2 {
   line-height: 30px;
-  position: relative;
   padding: 30px;
 
 }
 
 .content-sec2 h3 {
   color: #dc2316;
-  /* position: relative; */
 }
 
-/* 
-
-.ser-sec ::after {
-  content: "";
-  width: 100vw;
-  height: 3px;
-  background-color: #dc2316;
-  position: absolute;
-  bottom: 0;
-} */
 
 .middle-sec2 {
   background-color: #F9F9F9;
@@ -278,9 +253,9 @@ section {
 .about-say {
   background-color: #191919;
   color: white;
-  /* margin-bottom: 100px; */
+  margin-bottom: 18px;
   padding: 40px;
-  margin: 32px;
+ 
 }
 
 .about-say .slider-about-say {
@@ -372,5 +347,27 @@ footer .footer-bottom {
     display: block;
 
 }
+}
+
+
+@media (max-width: 1000px) {
+  header>i.fa-bars {
+    display: block;
+  }
+
+  .left-header nav {
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    background-color: gray;
+    align-items: start;
+    padding: 40px;
+    top: 100%;
+    left: -20px;
+  }
+
+  .left-header .opacity-1 {
+    opacity: 0;
+  }
 }
 

@@ -214,7 +214,7 @@ h2 {
 }
 .our-projects .projectimg {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 10px;
   justify-content: center;
   margin: auto;
@@ -481,7 +481,9 @@ footer .footer-bottom {
     justify-content: space-around;
     bottom: 5px;
   }
-
+  .our-projects .projectimg{
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 633px) {

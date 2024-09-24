@@ -125,21 +125,51 @@ header > i.fa-bars {
 h2 {
   color: red;
 }
-.heading {
+
+
+
+.heading-2{
+  position: relative;
+}
+
+.heading-2::after{
+content: "";
+position: absolute;
+background-color: red;
+width: 100%;
+height: 2px;
+bottom: 2px;
+}
+
+.heading-2 h2{
+  position: relative;
+  background-color:#191919;
+  z-index: 1;
+  width: fit-content;
+}
+
+
+
+
+.heading{
   position: relative;
 }
 
 .heading::after{
-    content: "";
-    position: absolute;
-    height: 3px;
-    background-color: red;
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    width: calc(100% - 200px);
-  }
+content: "";
+position: absolute;
+background-color: red;
+width: 100%;
+height: 2px;
+bottom: 2px;
+}
 
+.heading h1{
+  position: relative;
+  background-color: #ffffff;
+  z-index: 1;
+  width: fit-content;
+}
 
 .about-rip-services .right-section p {
   padding: 10px 0;

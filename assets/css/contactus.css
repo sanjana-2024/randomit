@@ -163,6 +163,13 @@ select option {
   margin: 30px 0px 20px 30px;
 }
 
+
+.main{
+  border-radius: 13px;
+}
+.right-content h2{
+  padding: 20px;
+}
 .btn2 {
   font-family: "Be Vietnam Pro", sans-serif;
   background-color: #dc2316;
@@ -184,6 +191,8 @@ select option {
   display: flex;
   gap: 0;
   line-height: 35px;
+  margin: 39px;
+  border: 2px solid #d5d5d5;
 }
 
 .boxes {
