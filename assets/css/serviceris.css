@@ -126,23 +126,20 @@ h2 {
   color: red;
 }
 .heading {
-  width: 200px;
+  position: relative;
 }
 
-.inclusions-in-the-services .right-section .about,
-.about-rip-services .right-section .about {
-  position: relative;
-  &::after {
+.heading::after{
     content: "";
+    position: absolute;
     height: 3px;
     background-color: red;
     position: absolute;
-    top: 65px;
-    top: 0;
+    bottom: 0;
     right: 0;
     width: calc(100% - 200px);
   }
-}
+
 
 .about-rip-services .right-section p {
   padding: 10px 0;

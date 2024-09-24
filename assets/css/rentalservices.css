@@ -123,23 +123,39 @@ header > i.fa-bars {
 h2 {
   color: red;
 }
-.heading {
-  width: 200px;
+
+.our-projects{
+  position: relative;
+
 }
 
-.inclusions-in-the-services .right-section .about,
-.about-rip-services .right-section .about {
+.our-projects h2{
+  width: fit-content;
+  background: #fff;
   position: relative;
-  &::after {
-    content: "";
-    height: 3px;
-    background-color: red;
-    position: absolute;
-    top: 65px;
-    top: 0;
-    right: 0;
-    width: calc(100% - 200px);
-  }
+  z-index: 1;
+}
+
+.heading h1 , .heading h2 {
+  width: fit-content;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.heading {
+  position: relative;
+}
+
+.heading::after{
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: red;
+  position: absolute;
+  bottom: 11px;
+  right: 0;
+  width: 100%;
 }
 
 .about-rip-services .right-section p {
@@ -364,11 +380,15 @@ h2 {
   white-space: nowrap;
 }
 
+.about-say .owl-carousel .owl-item img {
+width:70px;
+}
 
 /* .owl-carousel .owl-item img {
   display: block;
   width: 70%;
 } */
+
 /* footer  */
 footer {
   background-color: #191919;
